@@ -1,0 +1,25 @@
+{
+  "name": "delta-analyzer",
+  "displayName": "DELTA-ANALYZER",
+  "description": "DELTA language support",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "delta",
+      "aliases": ["delta", "delta"],
+      "extensions": ["delta"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "delta",
+      "scopeName": "source.delta",
+      "path": "./syntaxes/delta.tmLanguage.json"
+    }]
+  }
+}

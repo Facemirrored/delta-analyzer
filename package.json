@@ -1,7 +1,7 @@
 {
-  "name": "delta-analyzer",
-  "displayName": "DELTA-ANALYZER",
-  "description": "DELTA language support",
+  "name": "delta-ads-analyzer",
+  "displayName": "DELTA-ADS-ANALYZER",
+  "description": "DELTA ADS language support",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.70.0"
@@ -11,14 +11,14 @@
   ],
   "contributes": {
     "languages": [{
-      "id": "delta",
-      "aliases": ["delta", "delta"],
-      "extensions": ["delta"],
+      "id": "delta-ads",
+      "aliases": ["delta-ads"],
+      "extensions": [".cob", ".cbl"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
-      "language": "delta",
-      "scopeName": "source.delta",
+      "language": "delta-ads",
+      "scopeName": "source.delta-ads",
       "path": "./syntaxes/delta.tmLanguage.json"
     }]
   }
